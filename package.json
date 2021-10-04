@@ -1,0 +1,35 @@
+{
+  "name": "flowers-react-challenge",
+  "version": "1.0.0",
+  "description": "A Fullstack React App Demo",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha",
+    "start": "node app.js",
+    "dev:start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacksongalan/flowers-react-challenge.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "node"
+  ],
+  "author": "Jackson Galan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacksongalan/flowers-react-challenge/issues"
+  },
+  "homepage": "https://github.com/jacksongalan/flowers-react-challenge#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}

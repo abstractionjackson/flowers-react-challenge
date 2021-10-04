@@ -1,13 +1,10 @@
-//Title
-//input
-//call to action btn
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Formik } from "formik";
 import Input from "react-autocomplete";
 import { getSearchResult } from "../features/post/postSlice";
 
-export default function SearchBox({ posts }) {
+export default function SearchBar({ posts }) {
   const [value, setValue] = useState("");
   const dispatch = useDispatch();
   const headerText = "Search Post by Title";

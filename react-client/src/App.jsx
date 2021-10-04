@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import Hero from "./components/Hero";
-import SearchBox from "./components/SearchBox";
+import SearchBar from "./components/SearchBar";
 import Results from "./components/Results";
 import Modal from "./components/Modal";
 import { API_BASE } from "./constants";
@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="bg-gray-300 w-full min-h-screen">
       <Hero text={"Flowers React Challenge"} />
-      <SearchBox posts={posts} />
+      <SearchBar posts={posts} />
       <Results />
       <Modal>
         <EditForm />
