@@ -4,8 +4,10 @@ import { useSelector, useDispatch } from "react-redux";
 import Hero from "./components/Hero";
 import SearchBox from "./components/SearchBox";
 import Results from "./components/Results";
+import Modal from "./components/Modal";
 import { API_BASE } from "./constants";
 import { update } from "./features/post/postSlice";
+import EditForm from "./components/EditForm";
 
 function App() {
   const posts = useSelector(state => state.post.posts);
@@ -29,6 +31,9 @@ function App() {
       <Hero text={"Flowers React Challenge"} />
       <SearchBox posts={posts} />
       <Results />
+      <Modal>
+        <EditForm />
+      </Modal>
     </div>
   );
 }
